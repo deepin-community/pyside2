@@ -1,0 +1,39 @@
+From cd8d7cfe58f46bf88bb323f2a7e347df55eae5ab Mon Sep 17 00:00:00 2001
+From: lhdjply <lhdjply@126.com>
+Date: Sat, 7 Jun 2025 10:36:09 +0800
+Subject: [PATCH] use 5.15.16 to instead 5.15.8
+
+---
+ sources/pyside2/pyside_version.py     | 2 +-
+ sources/shiboken2/shiboken_version.py | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/sources/pyside2/pyside_version.py b/sources/pyside2/pyside_version.py
+index 7f973ee..ba6e714 100644
+--- a/sources/pyside2/pyside_version.py
++++ b/sources/pyside2/pyside_version.py
+@@ -39,7 +39,7 @@
+ 
+ major_version = "5"
+ minor_version = "15"
+-patch_version = "16"
++patch_version = "8"
+ 
+ # For example: "a", "b", "rc"
+ # (which means "alpha", "beta", "release candidate").
+diff --git a/sources/shiboken2/shiboken_version.py b/sources/shiboken2/shiboken_version.py
+index 7f973ee..ba6e714 100644
+--- a/sources/shiboken2/shiboken_version.py
++++ b/sources/shiboken2/shiboken_version.py
+@@ -39,7 +39,7 @@
+ 
+ major_version = "5"
+ minor_version = "15"
+-patch_version = "16"
++patch_version = "8"
+ 
+ # For example: "a", "b", "rc"
+ # (which means "alpha", "beta", "release candidate").
+-- 
+2.47.2
+
