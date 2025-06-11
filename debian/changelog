@@ -1,3 +1,9 @@
+pyside2 (5.15.16-3.1deepin1) unstable; urgency=medium
+
+  * revert t64.
+
+ -- lhdjply <lhdjply@126.com>  Sat, 7 Jun 2025 08:47:49 +0800
+
 pyside2 (5.15.16-3.1) unstable; urgency=medium
 
   * Non-maintainer upload
