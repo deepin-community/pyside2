@@ -1,6 +1,7 @@
 pyside2 (5.15.8-2deepin1) unstable; urgency=medium
 
   * use 5.15.16 to instead 5.15.8
+  * fix *.pc path error
 
  -- lhdjply <lhdjply@126.com>  Sat, 7 Jun 2025 08:47:49 +0800
 
