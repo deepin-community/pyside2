@@ -19,3 +19,4 @@ shiboken2-clang-Write-scope-resolution-for-all-parameters.patch
 Do-the-transition-to-Python-3.13.patch
 Fix-condition-to-allow-3.13-for-wheel-creation.patch
 Use-public-version-of-PyLong_AsInt-for-Python-3.13.patch
+use-5.15.16-to-instead-5.15.8.patch
