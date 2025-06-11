@@ -3,9 +3,9 @@
 # Replace build directory value by install directory value
 package="libshiboken2-dev"
 for directory in "cmake/Shiboken2-$MAIN_VERSION_UPSTREAM" "pkgconfig"; do
-        sed -i "s|build.*relwithdebinfo/lib|usr/lib/$DEB_HOST_MULTIARCH|" \
+        sed -i "s|/.*relwithdebinfo/lib|/usr/lib/$DEB_HOST_MULTIARCH|" \
 	    debian/$package/usr/lib/$DEB_HOST_MULTIARCH/$directory/*;
-        sed -i "s|build.*relwithdebinfo|usr|" \
+        sed -i "s|/.*relwithdebinfo|/usr|" \
 	    debian/$package/usr/lib/$DEB_HOST_MULTIARCH/$directory/*;
         sed -i "s|\${PACKAGE_PREFIX_DIR}|/usr|" \
 	    debian/$package/usr/lib/$DEB_HOST_MULTIARCH/$directory/*;
@@ -19,9 +19,9 @@ done
 
 package="libpyside2-dev"
 for directory in "pkgconfig" "cmake/PySide2-$MAIN_VERSION_UPSTREAM"; do
-        sed -i "s|build.*relwithdebinfo/lib|usr/lib/$DEB_HOST_MULTIARCH|" \
+        sed -i "s|/.*relwithdebinfo/lib|/usr/lib/$DEB_HOST_MULTIARCH|" \
 	    debian/$package/usr/lib/$DEB_HOST_MULTIARCH/$directory/*;
-        sed -i "s|build.*relwithdebinfo|usr|" \
+        sed -i "s|/.*relwithdebinfo|/usr|" \
 	    debian/$package/usr/lib/$DEB_HOST_MULTIARCH/$directory/*;
         sed -i "s|\${PACKAGE_PREFIX_DIR}|/usr|" \
 	    debian/$package/usr/lib/$DEB_HOST_MULTIARCH/$directory/*;
